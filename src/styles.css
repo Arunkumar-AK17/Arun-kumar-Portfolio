@@ -2501,15 +2501,7 @@ button,textarea {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.hero-curiosity-label {
-  position: absolute;
-  z-index: 5;
-  right: 2%;
-  bottom: 14%;
-  color: #8fbfff;
-  font: 9px/1.8 var(--mono);
-  letter-spacing: 1.2px;
-}
+
 @media (max-width: 760px) {
   .hero-art .hero-orb,
   .hero-art .hero-ghost { top: 42%; }
