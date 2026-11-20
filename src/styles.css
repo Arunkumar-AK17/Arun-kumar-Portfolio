@@ -2481,3 +2481,42 @@ button,textarea {
 @media(max-width:1000px){.course-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media(max-width:760px){.skill-progression-heading{display:block}.skill-progression-heading p{margin-top:10px}.skill-progress-row{grid-template-columns:1fr;gap:10px}.skill-level-track{grid-template-columns:1fr 22px 1fr 22px 1fr 22px 1fr;gap:5px}.skill-level-label{font-size:10px}.course-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.course-image-frame{height:135px}.course-card{padding:9px}.course-card strong{font-size:13px}.course-issuer{font-size:11px}}
 @media(max-width:420px){.course-grid{grid-template-columns:1fr}.course-image-frame{height:190px}.skill-level-track{grid-template-columns:1fr 14px 1fr 14px 1fr 14px 1fr}.skill-level-label{font-size:9px}}
+
+
+/* Hero alignment: center the portrait and background AK with the circular orbit. */
+.hero-art .hero-orb {
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+}
+.hero-art .hero-portrait {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.hero-art .hero-ghost {
+  left: 50%;
+  right: auto;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-curiosity-label {
+  position: absolute;
+  z-index: 5;
+  right: 2%;
+  bottom: 14%;
+  color: #8fbfff;
+  font: 9px/1.8 var(--mono);
+  letter-spacing: 1.2px;
+}
+@media (max-width: 760px) {
+  .hero-art .hero-orb,
+  .hero-art .hero-ghost { top: 42%; }
+  .hero-curiosity-label {
+    right: 0;
+    bottom: 10%;
+    font-size: 8px;
+  }
+}
+
